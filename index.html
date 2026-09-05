@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>A Little Birthday Story</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main id="welcomeScreen" class="screen">
+		<section class="welcome" aria-labelledby="welcomeTitle">
+			<div class="gift" aria-hidden="true"><div class="gift-lid"></div><div class="gift-box"></div></div>
+			<div class="eyebrow">A small surprise for you</div>
+			<h1 id="welcomeTitle">Happy<br><span>Birthday!</span></h1>
+			<p>There are a few memories waiting inside. Turn up the sound, take your time, and enjoy your little birthday story.</p>
+			<button class="start-button" id="startButton">Open your surprise <span aria-hidden="true">→</span></button>
+		</section>
+	</main>
+
+	<main id="memoryScreen" class="screen memory-screen">
+		<div class="memory-wrap">
+			<div class="topbar"><div class="brand">For your next chapter ✦</div><button class="music-control" id="musicButton"><span>♫</span> Music on</button></div>
+			<div class="heading"><div><div class="eyebrow">The good times</div><h2>A year worth<br>remembering.</h2></div><div class="counter" id="counter">01 / 25</div></div>
+			<div class="slider" id="slider" aria-live="polite">
+				<div class="slide active"><img src="assets/Photo%20(1).jpeg" alt="Birthday memory 1"><div class="caption">27la chemya</div></div>
+				<div class="slide"><img src="assets/Photo%20(2).jpeg" alt="Birthday memory 2"><div class="caption">Yasalam 3al 4ortat</div></div>
+				<div class="slide"><img src="assets/Photo%20(3).jpeg" alt="Birthday memory 3"><div class="caption">4ortat 2.0</div></div>
+				<div class="slide"><img src="assets/Photo%20(4).jpeg" alt="Birthday memory 4"><div class="caption">Kid ANoos</div></div>
+				<div class="slide"><img src="assets/Photo%20(5).jpeg" alt="Birthday memory 5"><div class="caption">Beach anoos</div></div>
+				<div class="slide"><img src="assets/Photo%20(6).jpeg" alt="Birthday memory 6"><div class="caption">27la wa7ed fel badla</div></div>
+				<div class="slide"><img src="assets/Photo%20(7).jpeg" alt="Birthday memory 7"><div class="caption">el lazer</div></div>
+				<div class="slide"><img src="assets/Photo%20(8).jpeg" alt="Birthday memory 8"><div class="caption">ma2mos</div></div>
+				<div class="slide"><img src="assets/Photo%20(9).jpeg" alt="Birthday memory 9"><div class="caption">Hands up.</div></div>
+				<div class="slide"><img src="assets/Photo%20(10).jpeg" alt="Birthday memory 10"><div class="caption">Shawerma ;D</div></div>
+				<div class="slide"><img src="assets/Photo%20(11).jpeg" alt="Birthday memory 11"><div class="caption">juice</div></div>
+				<div class="slide"><img src="assets/Photo%20(12).jpeg" alt="Birthday memory 12"><div class="caption">me4 3aref</div></div>
+				<div class="slide"><img src="assets/Photo%20(13).jpeg" alt="Birthday memory 13"><div class="caption">thumbs up</div></div>
+				<div class="slide"><img src="assets/Photo%20(14).jpeg" alt="Birthday memory 14"><div class="caption">feeen el handasa</div></div>
+				<div class="slide"><img src="assets/Photo%20(15).jpeg" alt="Birthday memory 15"><div class="caption">ma3karona spagetti</div></div>
+				<div class="slide"><img src="assets/Photo%20(16).jpeg" alt="Birthday memory 16"><div class="caption">peace</div></div>
+				<div class="slide"><img src="assets/Photo%20(17).jpeg" alt="Birthday memory 17"><div class="caption">thug</div></div>
+				<div class="slide"><img src="assets/Photo%20(18).jpeg" alt="Birthday memory 18"><div class="caption">boss</div></div>
+				<div class="slide"><img src="assets/Photo%20(19).jpeg" alt="Birthday memory 19"><div class="caption">bata</div></div>
+				<div class="slide"><img src="assets/Photo%20(20).jpeg" alt="Birthday memory 20"><div class="caption">sleeping</div></div>
+				<div class="slide"><img src="assets/Photo%20(21).jpeg" alt="Birthday memory 21"><div class="caption">tram</div></div>
+				<div class="slide"><img src="assets/Photo%20(22).jpeg" alt="Birthday memory 22"><div class="caption">tram 2.0</div></div>
+				<div class="slide"><img src="assets/Photo%20(23).jpeg" alt="Birthday memory 23"><div class="caption">smirk</div></div>
+				<div class="slide"><img src="assets/Photo%20(24).jpeg" alt="Birthday memory 24"><div class="caption">za3lana</div></div>
+				<div class="slide"><img src="assets/Photo%20(25).jpeg" alt="Birthday memory 25"><div class="caption">baraka</div></div>
+				<button class="slider-button previous" id="previousButton" aria-label="Previous photo">←</button><button class="slider-button next" id="nextButton" aria-label="Next photo">→</button>
+			</div>
+			<div class="dots" id="dots" aria-label="Choose a photo"></div>
+			<div class="closing"><div class="eyebrow">One more thing</div><p>May this year bring you the kind of happiness that sneaks up on you, stays late, and gives you something to smile about tomorrow.</p></div>
+		</div>
+	</main>
+
+	<audio id="birthdaySong" loop preload="auto" src="assets/song.mp3"></audio>
+	<script src="script.js"></script>
+</body>
+</html>
